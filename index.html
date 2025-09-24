@@ -1,0 +1,164 @@
+<!-- Portfolio de Luis Saucedo - Archivo HTML único (incluye CSS) -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Luis Saucedo — Portfolio</title>
+  <meta name="description" content="Portfolio de Luis Saucedo — estudiante, programador y creador de proyectos como Mood Mend, Chance y Find Your Pet.">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071022 0%, #0b1530 100%);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:28px;max-width:1100px;margin:0 auto}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{font-size:1.6rem;margin:0}
+    .subtitle{color:var(--muted);font-size:0.95rem}
+
+    main{max-width:1100px;margin:28px auto;padding:24px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}header{padding:18px}.brand span{display:none}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+
+    /* About */
+    .about p{line-height:1.6;color: #d7e6f2}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 12px;border-radius:999px;font-size:0.85rem;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+
+    /* Projects */
+    .projects{display:grid;gap:12px}
+    .project{display:flex;gap:12px;align-items:center}
+    .thumb{width:84px;height:64px;border-radius:8px;flex-shrink:0;display:grid;place-items:center;background:linear-gradient(135deg,#0b1220, #071621);border:1px solid rgba(255,255,255,0.02)}
+    .proj-info h3{margin:0;font-size:1rem}
+    .proj-info p{margin:6px 0 0;color:var(--muted);font-size:0.9rem}
+
+    /* Sidebar */
+    .sidebar .meta{display:flex;flex-direction:column;gap:8px}
+    .meta .line{display:flex;justify-content:space-between;color:var(--muted);padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+
+    /* Contact */
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit;resize:vertical}
+    button{background:var(--accent);border:0;padding:10px 14px;border-radius:8px;color:#042027;font-weight:600;cursor:pointer}
+
+    footer{max-width:1100px;margin:28px auto;padding:14px;color:var(--muted);text-align:center}
+
+    /* small badges */
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .badge{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:999px;font-size:0.82rem;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">LS</div>
+      <div>
+        <h1>Luis Saucedo</h1>
+        <div class="subtitle">Estudiante (doble turno) • Programación • Diseño • Fotografía</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#proyectos">Proyectos</a> &nbsp; • &nbsp; <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card about">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante en doble turno: en la mañana estudio en la escuela y por la tarde en Súperate. Tengo conocimientos en inglés, programación, diseño, herramientas de Microsoft, fotografía y edición de video básica. He participado en proyectos grupales como <strong>Mood Mend</strong>, <strong>Chance</strong> y <strong>Find Your Pet</strong>. A través de estas experiencias he desarrollado valores y habilidades como liderazgo, resiliencia, trabajo en equipo y resolución de conflictos.</p>
+
+        <div class="badges">
+          <div class="badge">Doble turno</div>
+          <div class="badge">Inglés</div>
+          <div class="badge">Programación</div>
+          <div class="badge">Diseño</div>
+          <div class="badge">Fotografía</div>
+          <div class="badge">Edición de video</div>
+        </div>
+
+        <h3 style="margin-top:18px">Habilidades</h3>
+        <div class="skills">
+          <span class="skill">HTML & CSS</span>
+          <span class="skill">JavaScript (básico)</span>
+          <span class="skill">Microsoft Office</span>
+          <span class="skill">Figma / Diseño</span>
+          <span class="skill">Fotografía</span>
+          <span class="skill">Edición de video (básico)</span>
+          <span class="skill">Comunicación (inglés básico-intermedio)</span>
+        </div>
+
+        <h3 style="margin-top:18px">Qué busco</h3>
+        <p>Aprender, participar en más proyectos colaborativos y mejorar mis habilidades en programación y producción audiovisual. Me interesan roles donde pueda aportar creatividad y liderazgo, además de seguir desarrollando trabajo en equipo.</p>
+
+        <h3 id="proyectos" style="margin-top:18px">Proyectos destacados</h3>
+        <div class="projects">
+          <div class="project">
+            <div class="thumb" aria-hidden>
+              <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="36" rx="6" fill="url(#g)"/><defs><linearGradient id="g" x1="0" y1="0" x2="48" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs></svg>
+            </div>
+            <div class="proj-info">
+              <h3>Mood Mend</h3>
+              <p>Proyecto grupal enfocado en bienestar emocional — diseño de interfaz y soporte en documentación y pruebas.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="thumb">
+              <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="36" rx="6" fill="url(#g2)"/><defs><linearGradient id="g2" x1="0" y1="0" x2="48" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#f97316"/><stop offset="1" stop-color="#ef4444"/></linearGradient></defs></svg>
+            </div>
+            <div class="proj-info">
+              <h3>Chance</h3>
+              <p>App educativa para mejorar pronunciación en inglés — Co fundador participé en diseño y guionización de lecciones y encargado de marketing y videos.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="thumb">
+              <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="36" rx="6" fill="url(#g3)"/><defs><linearGradient id="g3" x1="0" y1="0" x2="48" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#34d399"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs></svg>
+            </div>
+            <div class="proj-info">
+              <h3>Find Your Pet</h3>
+              <p>Plataforma para conectar mascotas perdidas con dueños — Co fundador, colaboración en investigación, pruebas y presentaciones.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="card sidebar">
+        <h2>Contacto & Más</h2>
+        <div class="meta">
+          <div class="line"><strong>Ubicación</strong><span>Panamá</span></div>
+          <div class="line"><strong>Disponibilidad</strong><span>Proyectos estudiantiles / freelance</span></div>
+          <div class="line"><strong>Valores</strong><span>Liderazgo · Resiliencia · Trabajo en equipo · Resolución de conflictos</span></div>
+        </div>
+
+        <h3 style="margin-top:14px">Descargar CV</h3>
+        <p class="subtitle" style="color:var(--muted)"></p>
+        <p><a href="mailto:luis.saucedo2025@provivienda.superate.org.pa?subject=Interesado%20en%20tu%20perfil" aria-label="Enviar correo">Enviar correo / pedir CV</a></p>
+
+        <h3 style="margin-top:12px">Contacto rápido</h3>
+        <form id="contacto" onsubmit="event.preventDefault(); alert('Formulario simulado: reemplaza con acción real.');">
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu correo" required>
+          <textarea rows="4" placeholder="Mensaje (ej: colaboración, oferta, pregunta)" required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <div style="margin-top:16px;color:var(--muted);font-size:0.9rem">
+          <strong>Redes</strong>
+          <p style="margin:6px 0 0">www.linkedin.com/in/luis-saucedo-002548300</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    Hecho por <strong>Luis Saucedo</strong> • 
+  </footer>
+</body>
+</html>
